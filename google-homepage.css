@@ -62,10 +62,15 @@ div {
     margin-right: 10px;
 }
 
+.mic-button:hover,
+.mic-button:focus-within{
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
 .mic-button {
     background-color: transparent;
-    border-color: white;
-    box-shadow: 0 0 0 0 whitesmoke;
+    border-color: transparent;
 }
 
 .mic-icon {
