@@ -28,7 +28,7 @@ div {
 .logo {
     width: 272px;
     height: 92px;
-    margin-bottom: 30px;
+    margin: 30px 30px 30px 30px;
     background: white;
 }
 
@@ -38,15 +38,15 @@ div {
     justify-content: space-between;
     width: auto;
     height: auto;
-    padding: 10px;
-    border: 1px solid var(white);
+    margin: 10px 10px 10px 10px;
+    border: 1px solid rgba(30, 30, 34, 0.1);
     border-radius: 50px;
 }
 
 .searchbar:hover,
 .searchbar:focus-within {
     border-color: white;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 1px 6px 0 rgba(30, 33, 34, 0.28);
 }
 
 .search-input {
@@ -59,21 +59,47 @@ div {
 .search-icon {
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .mic-button:hover,
-.mic-button:focus-within{
+.mic-button:focus-within {
     background-color: transparent;
     border-color: transparent;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
+
 .mic-button {
     background-color: transparent;
     border-color: transparent;
+    margin: 5px 8px 5px 5px;
 }
 
 .mic-icon {
     width: 25px;
     height: 25px;
+}
+
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.button-search {
+    margin: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.button-search:hover,
+.button-search:focus-within {
+    border: 1px solid rgba(30, 33, 34, 0.1);
+    box-shadow: 0 1px 6px 0 rgba(30, 33, 34, 0.1);
 }
