@@ -25,6 +25,46 @@ div {
     margin-top: 50px;
 }
 
+.nav {
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-link {
+    margin: 0px 10px 0px 10px;
+    color: black;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.nav-button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.nav-button:hover,
+.nav-button:focus-within {
+    background-color: rgba(30, 30, 34, 0.1);
+    border-color: transparent;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
 .logo {
     width: 272px;
     height: 92px;
