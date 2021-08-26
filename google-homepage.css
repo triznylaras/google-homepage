@@ -1,16 +1,28 @@
 body {
-    margin: 0;
     background: white;
     color: black;
     font-family: arial, sans-serif;
     text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
     position: relative;
     background: white;
 }
@@ -19,13 +31,13 @@ div {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 55vh;
+    width: 100%;
+    height: auto;
     min-height: 300px;
     margin-top: 50px;
 }
 
-.nav {
+nav {
     display: flex;
     margin: 10px;
     justify-content: flex-end;
@@ -35,9 +47,7 @@ div {
 
 .nav-link {
     margin: 0px 10px 0px 10px;
-    color: black;
     opacity: 0.85;
-    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -68,19 +78,21 @@ div {
 .logo {
     width: 272px;
     height: 92px;
-    margin: 30px 30px 30px 30px;
+    margin: 30px;
     background: white;
 }
 
 .searchbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: auto;
-    height: auto;
-    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    width: 500px;
+    height: 25px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid rgba(30, 30, 34, 0.1);
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .searchbar:hover,
@@ -91,7 +103,7 @@ div {
 
 .search-input {
     border-color: transparent;
-    outline: 0ch;
+    outline: transparent;
     width: 100%;
     height: 100%;
 }
@@ -99,7 +111,7 @@ div {
 .search-icon {
     width: 25px;
     height: 25px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 10px 0px 0px;
 }
 
 .mic-button:hover,
@@ -112,7 +124,6 @@ div {
 .mic-button {
     background-color: transparent;
     border-color: transparent;
-    margin: 5px 8px 5px 5px;
 }
 
 .mic-icon {
@@ -124,13 +135,14 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-top: 30px;
+    height: inherit;
+    margin-top: 10px;
+    background: transparent;
 }
 
 .button-search {
     margin: 20px 10px 20px 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border: 1px solid transparent;
     border-radius: 3px;
     color: #3c4043;
@@ -139,7 +151,39 @@ div {
 }
 
 .button-search:hover,
-.button-search:focus-within {
+.button-search:focus {
     border: 1px solid rgba(30, 33, 34, 0.1);
     box-shadow: 0 1px 6px 0 rgba(30, 33, 34, 0.1);
+}
+
+footer {
+    display: inherit;
+    align-items: center;
+    justify-content: last baseline;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f2f2f2;
+    color: #70757a;
+}
+
+.first-footer,
+.second-footer {
+    display: flex;
+    background: #f2f2f2;
+}
+
+.second-footer {
+    margin-right: 30px;
+}
+
+.footer-link {
+    padding: 10px 0px 10px 30px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
